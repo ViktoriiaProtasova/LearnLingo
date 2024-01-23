@@ -4,7 +4,7 @@
   /* MAIN COLORS */
 
   --primary-yellow: #f4c550;
-  --secondary-yellow: #fbe9ba;
+  --secondary-yellow: #ffdc86;
 
   /* TEXT COLORS */
 
@@ -19,11 +19,11 @@
 
   --main-font: 'Roboto', sans-serif;
 
-  /* ANIMATIONS */
+  /* TRANSITIONS */
 
-  --animation-duration-long: 500ms;
-  --animation-duration: 250ms;
-  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration-long: 500ms;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -46,10 +46,54 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 372px;
+  padding: 64px;
+  border-radius: 30px;
+  border: 1px solid #121417;
+  background: var(--secondary-text-color);
+  overflow: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal-close-btn-icon {
+  width: 32px;
+  height: 32px;
+  stroke: var(--primary-text-color);
 }
