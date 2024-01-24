@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledPopUp } from './PopUp.styled';
-import sprite from '../../images/sprite.svg';
+import { CgClose } from 'react-icons/cg';
+import { iconSize } from 'components/constants';
 
 const PopUp = ({ title, text, children }) => {
   return (
@@ -13,9 +14,7 @@ const PopUp = ({ title, text, children }) => {
           type="button"
           aria-label="Modal close button"
         >
-          <svg className="modal-close-btn-icon">
-            <use href={sprite + '#icon-close'}></use>
-          </svg>
+          <CgClose className="modal-close-btn-icon" size={iconSize.xl} />
         </button>
         <h2>{title}</h2>
         <p>{text}</p>
