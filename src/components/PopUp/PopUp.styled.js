@@ -11,5 +11,4 @@ export const StyledPopUp = styled.div`
   transition: opacity var(--transition-duration-long) var(--transition-timing-function),
     visibility var(--transition-duration-long) var(--transition-timing-function);
 }
-  
 `;

@@ -93,7 +93,5 @@ a {
 }
 
 .modal-close-btn-icon {
-  width: 32px;
-  height: 32px;
-  stroke: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
