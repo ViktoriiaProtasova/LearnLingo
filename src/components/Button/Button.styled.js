@@ -40,11 +40,12 @@ ${props => {
     props.$registration
       ? 'var(--secondary-text-color)'
       : 'var(--primary-text-color)'};
-		
-		&:hover, &:focus { background: ${props =>
-      props.$registration
-        ? 'var(--secondary-text-color)'
-        : 'var(--secondary-yellow)'};
+      
+    
+	&:hover, &:focus { background: ${props =>
+    props.$registration
+      ? 'var(--secondary-text-color)'
+      : 'var(--secondary-yellow)'};
         
 				border: ${props => props.$registration && '1px solid var(--primary-text-color)'};
         

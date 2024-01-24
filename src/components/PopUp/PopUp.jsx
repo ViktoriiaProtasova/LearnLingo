@@ -7,14 +7,9 @@ import { iconSize } from 'components/constants';
 const PopUp = ({ title, text, children }) => {
   return (
     <StyledPopUp>
-      <div className="modal">
-        <button
-          className="modal-close-btn"
-          data-modal-close
-          type="button"
-          aria-label="Modal close button"
-        >
-          <CgClose className="modal-close-btn-icon" size={iconSize.xl} />
+      <div>
+        <button data-modal-close type="button" aria-label="Modal close button">
+          <CgClose size={iconSize.xl} />
         </button>
         <h2>{title}</h2>
         <p>{text}</p>
