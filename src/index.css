@@ -14,8 +14,8 @@
   /* SERVICE COLORS */
 
   --accent-color: #38cd3e;
-  --primary-dark: #333333;
-  --primary-light: #767676;
+  --primary-dark: rgba(18, 20, 23, 0.8);
+  --primary-light: rgba(18, 20, 23, 0.2);
 
   /* TYPEFACES */
 
