@@ -15,14 +15,16 @@ export const StyledPopUp = styled.div`
 
   div {
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 372px;
+    transform: translateX(-50%);
+    transform-origin: top left;
+
+    width: 600px;
     padding: 64px;
     border-radius: 30px;
-    border: 1px solid #121417;
+    max-height: 70vh;
+
     background: var(--secondary-text-color);
     overflow: auto;
   }

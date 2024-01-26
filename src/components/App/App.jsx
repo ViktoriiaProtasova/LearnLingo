@@ -5,8 +5,8 @@ import PopUp from '../PopUp/PopUp';
 const App = () => {
   return (
     <div>
-      <Button>Click me</Button>
-      <PopUp></PopUp>
+      {/* <Button $registration>Click me</Button> */}
+      <PopUp title="" text=""></PopUp>
     </div>
   );
 };
