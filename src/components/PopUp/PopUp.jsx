@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledPopUp } from './PopUp.styled';
 import { CgClose } from 'react-icons/cg';
-import { iconSize } from 'components/constants';
+import { iconSize } from 'components/Constants';
 
 const PopUp = ({ title, text, children }) => {
   return (
