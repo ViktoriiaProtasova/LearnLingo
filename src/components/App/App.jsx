@@ -1,12 +1,13 @@
 import React from 'react';
-import Button from '../Button/Button';
-import PopUp from '../PopUp/PopUp';
+// import Button from '../Button/Button';
+// import PopUp from '../PopUp/PopUp';
+import Booking from 'components/Booking/Booking';
 
 const App = () => {
   return (
     <div>
       {/* <Button $registration>Click me</Button> */}
-      <PopUp title="" text=""></PopUp>
+      <Booking></Booking>
     </div>
   );
 };
