@@ -9,17 +9,16 @@ export const StyledPopUp = styled.div`
   width: 100%;
   height: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: rgba(255, 255, 255, 0.9);
   transition: opacity var(--transition-duration-long)
     var(--transition-timing-function);
 
-  div {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    transform-origin: top left;
-
+  .modal {
+    position: relative;
     width: 600px;
     padding: 64px;
     border-radius: 30px;
@@ -29,15 +28,16 @@ export const StyledPopUp = styled.div`
     overflow: auto;
   }
 
-  button {
+  .close-button {
     position: absolute;
     top: 20px;
     right: 20px;
     border: none;
+    outline: none;
     background-color: transparent;
   }
 
-  svg {
+  .modal svg {
     color: var(--primary-text-color);
   }
 `;
