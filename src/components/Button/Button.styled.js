@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledBtn = styled.button`
+export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,7 @@ export const StyledBtn = styled.button`
     $registration ? '14px 39px;' : '16px 88px;'};
 
   font-size: ${({ $registration }) => ($registration ? '16px;' : '18px;')};
+  font-family: inherit;
   font-weight: 700;
   line-height: ${({ $registration }) => ($registration ? 1.25 : 1.56)};
 

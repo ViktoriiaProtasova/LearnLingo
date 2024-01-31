@@ -1,14 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledBooking } from './Booking.styled';
+import { StyledBooking, StyledTitle } from './Booking.styled';
+import Button from 'components/Button/Button';
+import Input from 'components/Input/Input';
 
 const Booking = ({ name, surname, avatar_url }) => {
   return (
     <StyledBooking>
+      <StyledTitle>
+        <h1 className="booking-title">Book trial lesson</h1>
+        <p className="booking-text">
+          Our experienced tutor will assess your current language level, discuss
+          your learning goals, and tailor the lesson to your specific needs.
+        </p>
+      </StyledTitle>
       <div className="image-wrapper">
-        <img src={avatar_url} alt="Your teacher" />
+        <div className="image-thumb">
+          <img src={avatar_url} alt="Your teacher" />
+        </div>
         <div>
-          <p>YourTeacher</p>
+          <p className="teacher-title">YourTeacher</p>
           <p>
             <span>{name}</span>
             <span>{surname}</span>
@@ -16,43 +27,39 @@ const Booking = ({ name, surname, avatar_url }) => {
         </div>
       </div>
       <h2>What is your main reason for learning English?</h2>
-      <fieldset>
-        <div>
+      <fieldset className="radio-group">
+        <div className="radio-wrapper">
+          <input type="radio" id="reason_career" value="career" name="reason" />
           <label htmlFor="reason_career">Career and business</label>
-          <input
-            type="radio"
-            id="reason_career"
-            value="career"
-            name="reason"
-            checked
-          />
         </div>
-
-        <div>
-          <label htmlFor="reason_kids">Lesson for kids</label>
+        <div className="radio-wrapper">
           <input type="radio" id="reason_kids" value="kids" name="reason" />
+          <label htmlFor="reason_kids">Lesson for kids</label>
         </div>
-
-        <div>
-          <label htmlFor="reason_abroad">Living abroad</label>
+        <div className="radio-wrapper">
           <input type="radio" id="reason_abroad" value="abroad" name="reason" />
+          <label htmlFor="reason_abroad">Living abroad</label>
         </div>
-
-        <div>
-          <label htmlFor="reason_coursework">Exams and coursework</label>
+        <div className="radio-wrapper">
           <input
             type="radio"
             id="reason_coursework"
             value="coursework"
             name="reason"
           />
+          <label htmlFor="reason_coursework">Exams and coursework</label>
         </div>
-
-        <div>
-          <label htmlFor="reason_travel">Culture, travel or hobby</label>
+        <div className="radio-wrapper">
           <input type="radio" id="reason_travel" value="travel" name="reason" />
+          <label htmlFor="reason_travel">Culture, travel or hobby</label>
         </div>
       </fieldset>
+      <fieldset className="input-group">
+        <Input type="text" name="full_name" placeholder="Full Name"></Input>
+        <Input type="email" name="email" placeholder="Email"></Input>
+        <Input type="tel" name="tel" placeholder="Phone number"></Input>
+      </fieldset>
+      <Button $size="large">Book</Button>
     </StyledBooking>
   );
 };

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledBtn } from './Button.styled';
+import { StyledButton } from './Button.styled';
 
 const Button = ({ $size, $registration, children }) => {
   return (
-    <StyledBtn $size={$size} $registration={$registration}>
+    <StyledButton $size={$size} $registration={$registration}>
       {children}
-    </StyledBtn>
+    </StyledButton>
   );
 };
 
