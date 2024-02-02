@@ -22,8 +22,6 @@
   /* TYPEFACES */
 
   --main-font: 'Roboto', sans-serif;
-  /* --medium-font: 'Roboto-Medium', sans-serif;
-  --bold-font: 'Roboto-Bold', sans-serif; */
 
   /* TRANSITIONS */
 
@@ -31,21 +29,6 @@
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/public/fonts/Roboto-Regular.ttf');
-}
-/* 
-@font-face {
-  font-family: 'Roboto-Medium';
-  src: url('/public/fonts/Roboto-Medium.ttf');
-}
-
-@font-face {
-  font-family: 'Roboto-Bold';
-  src: url('/public/fonts/Roboto-Bold.ttf');
-} */
 
 body {
   margin: 0;
@@ -99,6 +82,11 @@ fieldset {
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-dark);
   border-radius: 5em;
+}
+
+.radio-group,
+.input-group {
+  margin-bottom: 40px;
 }
 
 .input-group {
