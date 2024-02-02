@@ -26,7 +26,9 @@ const Booking = ({ name, surname, avatar_url }) => {
           </p>
         </div>
       </div>
-      <h2>What is your main reason for learning English?</h2>
+      <h2 className="radio-title">
+        What is your main reason for learning English?
+      </h2>
       <fieldset className="radio-group">
         <div className="radio-wrapper">
           <input type="radio" id="reason_career" value="career" name="reason" />

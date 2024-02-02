@@ -1,22 +1,30 @@
-import { StyledTitle } from 'components/Booking/Booking.styled';
-import Button from 'components/Button/Button';
-import { StyledInput } from 'components/Input/Input.styled';
 import React from 'react';
+import { StyledTitle } from 'components/Booking/Booking.styled';
+import { StyledInput } from 'components/Input/Input.styled';
 import { StyledLoginCard } from './LoginCard.styled';
+import Button from 'components/Button/Button';
 
 const LoginCard = () => {
   return (
     <StyledLoginCard>
       <StyledTitle>
-        <h1 className="booking-title">Log In</h1>
-        <p className="booking-text">
+        <h1 className="form-title">Log In</h1>
+        <p className="form-text">
           Welcome back! Please enter your credentials to access your account and
           continue your search for an teacher.
         </p>
       </StyledTitle>
       <fieldset className="input-group">
-        <StyledInput></StyledInput>
-        <StyledInput></StyledInput>
+        <StyledInput
+          name="email"
+          type="email"
+          placeholder="Email"
+        ></StyledInput>
+        <StyledInput
+          name="password"
+          type="password"
+          placeholder="Password"
+        ></StyledInput>
       </fieldset>
       <Button $size="large">Log In</Button>
     </StyledLoginCard>

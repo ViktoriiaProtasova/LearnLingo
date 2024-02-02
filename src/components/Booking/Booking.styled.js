@@ -23,22 +23,17 @@ export const StyledBooking = styled.form`
     color: var(--light-text-color);
   }
 
-  span {
+  .teacher-title span {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
   }
 
-  h2 {
+  .radio-title {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.33;
     margin-bottom: 21px;
-  }
-
-  .radio-group,
-  .input-group {
-    margin-bottom: 40px;
   }
 
   .radio-wrapper {
@@ -53,7 +48,7 @@ export const StyledBooking = styled.form`
 `;
 
 export const StyledTitle = styled.div`
-  .booking-title {
+  .form-title {
     font-size: 40px;
     font-weight: 500;
     line-height: 1.2;
@@ -61,7 +56,7 @@ export const StyledTitle = styled.div`
     margin-bottom: 20px;
   }
 
-  .booking-text {
+  .form-text {
     font-size: 16px;
     font-style: normal;
     line-height: 1.38;
