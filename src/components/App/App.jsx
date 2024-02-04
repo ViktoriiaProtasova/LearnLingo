@@ -10,6 +10,7 @@ import Booking from 'components/Booking/Booking';
 import LoginCard from 'components/LoginCard/LoginCard';
 import RegistrationCard from 'components/RegistrationCard/RegistrationCard';
 import TeacherCard from 'components/TeacherCard/TeacherCard';
+import TeacherLevel from 'components/TeacherLevel/TeacherLevel';
 
 const App = () => {
   return (
