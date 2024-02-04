@@ -8,6 +8,9 @@ const TeacherLevel = ({ $isActive, level }) => {
   );
 };
 
-TeacherLevel.propTypes = {};
+TeacherLevel.propTypes = {
+  $isActive: PropTypes.bool.isRequired,
+  level: PropTypes.string.isRequired,
+};
 
 export default TeacherLevel;
