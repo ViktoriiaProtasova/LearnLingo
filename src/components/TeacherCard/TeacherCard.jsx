@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { LuBookOpen } from 'react-icons/lu';
 import { FaStar } from 'react-icons/fa';
 import { FiHeart } from 'react-icons/fi';
+import { VscCircleFilled } from 'react-icons/vsc';
 import { iconSize } from '../../constants';
 import { StyledTeacherCard } from './TeacherCard.styled';
 import TeacherLevel from 'components/TeacherLevel/TeacherLevel';
@@ -24,7 +25,12 @@ const TeacherCard = ({
 }) => {
   return (
     <StyledTeacherCard>
-      <div className="teacher-avatar">avatar</div>
+      <div className="teacher-avatar">
+        <div className="thumb">
+          <img src={avatar_url} alt={`${name} ${surname}`} />
+          <VscCircleFilled className="online" />
+        </div>
+      </div>
       <div className="grid-row teacher-about">
         <FiHeart size={iconSize.lg} className="heart" />
         <div className="teacher-name-wrapper">

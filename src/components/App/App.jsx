@@ -10,6 +10,8 @@ import Booking from 'components/Booking/Booking';
 import LoginCard from 'components/LoginCard/LoginCard';
 import RegistrationCard from 'components/RegistrationCard/RegistrationCard';
 import TeacherCard from 'components/TeacherCard/TeacherCard';
+import HeroImg from 'components/HeroImg/HeroImg';
+import Hero from 'components/Hero/Hero';
 
 const App = () => {
   return (
@@ -20,7 +22,8 @@ const App = () => {
         <Booking></Booking>
         <RegistrationCard></RegistrationCard>
       </PopUp> */}
-      <TeacherCard></TeacherCard>
+      {/* <TeacherCard></TeacherCard> */}
+      {/* <Hero></Hero> */}
     </div>
   );
 };

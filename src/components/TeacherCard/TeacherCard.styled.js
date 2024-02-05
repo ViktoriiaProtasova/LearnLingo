@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const StyledTeacherCard = styled.div`
   display: grid;
   grid-template-columns: 120px 1fr;
-  grid-template-rows: repeat(4, 100px);
-  /* gap: 32px 48px; */
+  grid-template-rows: repeat(4, auto);
   column-gap: 48px;
   padding: 24px;
 
@@ -15,6 +14,25 @@ export const StyledTeacherCard = styled.div`
   .teacher-avatar {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
+  }
+
+  .teacher-avatar .thumb {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    padding: 12px;
+    border-radius: 50%;
+    border: 3px solid var(--light-yellow);
+  }
+
+  .teacher-avatar .online {
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    width: 12px;
+    height: 12px;
+    border: 4px solid var(--secondary-text-color);
+    color: var(--accent-color);
   }
 
   .teacher-about {
