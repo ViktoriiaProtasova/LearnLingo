@@ -5,6 +5,7 @@
 
   --primary-yellow: #f4c550;
   --secondary-yellow: #ffdc86;
+  --light-yellow: #fbe9ba;
 
   /* TEXT COLORS */
 
@@ -18,6 +19,7 @@
   --primary-dark: rgba(18, 20, 23, 0.8);
   --primary-middle: rgba(18, 20, 23, 0.2);
   --primary-light: rgba(18, 20, 23, 0.1);
+  --bg-color: #f8f8f8;
 
   /* TYPEFACES */
 
