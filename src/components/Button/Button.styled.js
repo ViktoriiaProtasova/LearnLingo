@@ -13,7 +13,7 @@ export const StyledButton = styled.button`
   line-height: ${({ $registration }) => ($registration ? 1.25 : 1.56)};
 
   border-radius: 12px;
-  border: transparent;
+  border: 1px solid transparent;
   background: ${({ $registration }) =>
     $registration ? 'var(--primary-text-color)' : 'var(--primary-yellow)'};
 
