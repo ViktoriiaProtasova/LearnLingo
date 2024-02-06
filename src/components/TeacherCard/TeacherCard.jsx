@@ -82,7 +82,7 @@ const TeacherCard = ({
         </div>
         <a href="">Read more</a>
       </div>
-      {/* <div className="teacher-experience"></div> */}
+      <div className="teacher-experience"></div>
       <div className="grid-row teacher-level">
         {levels.map(level => {
           return <TeacherLevel level={level}></TeacherLevel>;

@@ -88,11 +88,9 @@ export const StyledTeacherCard = styled.div`
   }
 
   .teacher-score div:not(:last-child)::after {
-    content: '';
+    content: '|';
     margin: 0 16px;
-    width: 1px;
-    height: 16px;
-    background-color: var(--primary-middle);
+    color: var(--primary-middle);
   }
 
   .price span {

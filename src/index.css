@@ -17,6 +17,7 @@
 
   --accent-color: #38cd3e;
   --primary-dark: rgba(18, 20, 23, 0.8);
+  --primary-midnight: rgba(18, 20, 23, 0.7);
   --primary-middle: rgba(18, 20, 23, 0.2);
   --primary-light: rgba(18, 20, 23, 0.1);
   --bg-color: #f8f8f8;
@@ -68,6 +69,7 @@ button {
 a {
   color: currentColor;
   text-decoration: none;
+  cursor: pointer;
 }
 
 fieldset {
