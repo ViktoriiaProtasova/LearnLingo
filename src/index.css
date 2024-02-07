@@ -1,42 +1,8 @@
 @import-normalize;
 
-:root {
-  /* MAIN COLORS */
-
-  --primary-yellow: #f4c550;
-  --secondary-yellow: #ffdc86;
-  --light-yellow: #fbe9ba;
-
-  /* TEXT COLORS */
-
-  --primary-text-color: #121417;
-  --secondary-text-color: #ffffff;
-  --light-text-color: #8a8a89;
-
-  /* SERVICE COLORS */
-
-  --accent-color: #38cd3e;
-  --primary-dark: rgba(18, 20, 23, 0.8);
-  --primary-midnight: rgba(18, 20, 23, 0.7);
-  --primary-middle: rgba(18, 20, 23, 0.2);
-  --primary-light: rgba(18, 20, 23, 0.1);
-  --bg-color: #f8f8f8;
-
-  /* TYPEFACES */
-
-  --main-font: 'Roboto', sans-serif;
-
-  /* TRANSITIONS */
-
-  --transition-duration-long: 500ms;
-  --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 body {
   margin: 0;
-  font-family: var(--main-font);
-  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -80,11 +46,11 @@ fieldset {
 
 ::-webkit-scrollbar {
   width: 4px;
-  background-color: var(--primary-middle);
+  background-color: rgba(18, 20, 23, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary-dark);
+  background-color: rgba(18, 20, 23, 0.8);
   border-radius: 5em;
 }
 
