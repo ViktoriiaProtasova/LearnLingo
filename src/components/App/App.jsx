@@ -17,10 +17,11 @@ import Logo from 'components/Logo/Logo';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import StatisticsSection from 'components/StatisticsSection/StatisticsSection';
+import { StyledApp } from './App.styled';
 
 const App = () => {
   return (
-    <div>
+    <StyledApp>
       {/* <Button $registration>Click me</Button> */}
       {/* <PopUp>
         <LoginCard></LoginCard>
@@ -33,8 +34,8 @@ const App = () => {
       {/* <Logo></Logo> */}
       {/* <Header></Header> */}
       {/* <Footer></Footer> */}
-      {/* <StatisticsSection></StatisticsSection> */}
-    </div>
+      <StatisticsSection></StatisticsSection>
+    </StyledApp>
   );
 };
 
