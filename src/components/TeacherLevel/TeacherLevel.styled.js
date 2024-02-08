@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { color, spacing } from 'constants';
 
 export const StyledTeacherLevel = styled.span`
   height: 32px;
-  border: 1px solid var(--primary-middle);
+  border: 1px solid ${color.primaryMiddle};
   border-radius: 35px;
-  padding: 8px 12px;
+  padding: ${spacing(2)} ${spacing(3)};
   justify-content: center;
   align-items: center;
   display: inline-flex;
@@ -14,8 +15,7 @@ export const StyledTeacherLevel = styled.span`
 
   ${({ $isActive }) =>
     $isActive &&
-    `
-		border: transparent;
-    background-color: var(--primary-yellow);
+    `border: transparent;
+    background-color: ${color.primaryYellow};
   `}
 `;

@@ -5,16 +5,16 @@ export const StyledStatisticsSection = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: 1fr;
-  row-gap: ${spacing(5)};
+  row-gap: ${spacing(10)};
   justify-items: center;
-  padding: ${spacing(5)} 0;
+  padding: ${spacing(10)} 0;
   border-radius: 30px;
   border: 1.5px dashed ${color.primaryYellow};
 
   .section-content-item {
     display: inline-flex;
     align-items: center;
-    gap: ${spacing(2)};
+    gap: ${spacing(4)};
   }
 
   .section-content-item span {

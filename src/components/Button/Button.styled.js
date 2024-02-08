@@ -1,11 +1,14 @@
 import styled from 'styled-components';
+import { color, spacing, transition } from 'constants';
 
 export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: ${({ $registration }) =>
-    $registration ? '14px 39px;' : '16px 88px;'};
+    $registration
+      ? `${spacing(3.5)} ${spacing(9.75)};`
+      : `${spacing(4)} ${spacing(22)};`};
 
   font-size: ${({ $registration }) => ($registration ? '16px;' : '18px;')};
   font-family: inherit;
@@ -15,17 +18,17 @@ export const StyledButton = styled.button`
   border-radius: 12px;
   border: 1px solid transparent;
   background: ${({ $registration }) =>
-    $registration ? 'var(--primary-text-color)' : 'var(--primary-yellow)'};
+    $registration ? `${color.primaryTextColor}` : `${color.primaryYellow}`};
 
   transition:
-    background var(--transition-duration) var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
+    background ${transition.duration} ${transition.timingFunction},
+    color ${transition.duration} ${transition.timingFunction};
 
   ${({ $size }) => {
     switch ($size) {
       case 'small':
         return `
-        padding: 16px 48px;
+        padding: ${spacing(4)} ${spacing(12)};
       `;
       case 'large':
         return `
@@ -33,27 +36,27 @@ export const StyledButton = styled.button`
       `;
       default:
         return `
-        color: var(--primary-text-color);
+        color: ${color.primaryTextColor};
       `;
     }
   }}
 
   color: ${({ $registration }) =>
     $registration
-      ? 'var(--secondary-text-color)'
-      : 'var(--primary-text-color)'};
+      ? `${color.secondaryTextColor}`
+      : `${color.primaryTextColor}`};
 
   &:hover,
   &:focus {
     background: ${({ $registration }) =>
       $registration
-        ? 'var(--secondary-text-color)'
-        : 'var(--secondary-yellow)'};
+        ? `${color.secondaryTextColor}`
+        : `${color.secondaryYellow}`};
 
     border: ${({ $registration }) =>
-      $registration && '1px solid var(--primary-text-color)'};
+      $registration && `1px solid ${color.primaryTextColor}`};
 
     color: ${({ $registration }) =>
-      $registration && 'var(--primary-text-color)'};
+      $registration && `${color.primaryTextColor}`};
   }
 `;

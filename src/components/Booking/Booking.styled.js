@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { color, spacing } from 'constants';
 
 export const StyledBooking = styled.form`
   display: flex;
@@ -6,8 +7,8 @@ export const StyledBooking = styled.form`
 
   .image-wrapper {
     display: flex;
-    gap: 14px;
-    margin-bottom: 40px;
+    gap: ${spacing(4)};
+    margin-bottom: ${spacing(10)};
   }
 
   .image-thumb {
@@ -20,7 +21,7 @@ export const StyledBooking = styled.form`
     font-size: 12px;
     font-weight: 500;
     line-height: 1.33;
-    color: var(--light-text-color);
+    color: ${color.lightTextColor};
   }
 
   .teacher-title span {
@@ -33,17 +34,17 @@ export const StyledBooking = styled.form`
     font-size: 24px;
     font-weight: 500;
     line-height: 1.33;
-    margin-bottom: 21px;
+    margin-bottom: ${spacing(5)};
   }
 
   .radio-wrapper {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: ${spacing(2)};
   }
 
   .radio-wrapper:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: ${spacing(4)};
   }
 `;
 
@@ -53,13 +54,13 @@ export const StyledTitle = styled.div`
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.8px;
-    margin-bottom: 20px;
+    margin-bottom: ${spacing(5)};
   }
 
   .form-text {
     font-size: 16px;
     font-style: normal;
     line-height: 1.38;
-    margin-bottom: 20px;
+    margin-bottom: ${spacing(5)};
   }
 `;

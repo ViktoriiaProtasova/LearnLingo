@@ -18,6 +18,7 @@ import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import StatisticsSection from 'components/StatisticsSection/StatisticsSection';
 import { StyledApp } from './App.styled';
+import Filter from 'components/Filter/Filter';
 
 const App = () => {
   return (
@@ -34,7 +35,8 @@ const App = () => {
       {/* <Logo></Logo> */}
       {/* <Header></Header> */}
       {/* <Footer></Footer> */}
-      <StatisticsSection></StatisticsSection>
+      {/* <StatisticsSection></StatisticsSection> */}
+      {/* <Filter $type="languages" $title="Level of knowledge"></Filter> */}
     </StyledApp>
   );
 };
