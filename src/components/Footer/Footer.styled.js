@@ -1,27 +1,27 @@
 import styled from 'styled-components';
+import { color, spacing, transition } from 'constants';
 
 export const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: ${spacing(10)};
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
-  color: var(--primary-midnight);
+  color: ${color.primaryMidnight};
 
   p:not(:last-child)::after {
     content: '|';
-    margin: 0 8px;
-    color: var(--primary-midnight);
+    margin: 0 ${spacing(2)};
+    color: ${color.primaryMidnight};
   }
 
   a {
-    transition: color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: color ${transition.duration} ${transition.timingFunction};
   }
 
   a:is(:hover, :focus) {
-    color: var(--primary-yellow);
+    color: ${color.primaryYellow};
   }
 `;

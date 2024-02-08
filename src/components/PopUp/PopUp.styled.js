@@ -1,21 +1,18 @@
 import styled from 'styled-components';
+import { color, transition } from 'constants';
 
 export const StyledPopUp = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-
   width: 100%;
   height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: rgba(255, 255, 255, 0.9);
-  transition: opacity var(--transition-duration-long)
-    var(--transition-timing-function);
+  background-color: ${color.bgColor};
+  transition: opacity ${transition.duration} ${transition.timingFunction};
 
   .modal {
     position: relative;
@@ -23,8 +20,7 @@ export const StyledPopUp = styled.div`
     padding: 64px;
     border-radius: 30px;
     max-height: 70vh;
-
-    background: var(--secondary-text-color);
+    background: ${color.secondaryTextColor};
     overflow: auto;
   }
 
@@ -38,6 +34,6 @@ export const StyledPopUp = styled.div`
   }
 
   .modal svg {
-    color: var(--primary-text-color);
+    color: ${color.primaryTextColor};
   }
 `;

@@ -1,14 +1,15 @@
 import styled from 'styled-components';
+import { color, spacing } from 'constants';
 
 export const StyledTeacherCard = styled.div`
   display: grid;
   grid-template-columns: 120px 1fr;
   grid-template-rows: repeat(4, auto);
-  column-gap: 48px;
-  padding: 24px;
+  column-gap: ${spacing(12)};
+  padding: ${spacing(6)};
 
   .grid-row:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: ${spacing(8)};
   }
 
   .teacher-avatar {
@@ -20,9 +21,9 @@ export const StyledTeacherCard = styled.div`
     position: relative;
     width: 120px;
     height: 120px;
-    padding: 12px;
+    padding: ${spacing(3)};
     border-radius: 50%;
-    border: 3px solid var(--light-yellow);
+    border: 3px solid ${color.lightYellow};
   }
 
   .teacher-avatar .online {
@@ -31,8 +32,8 @@ export const StyledTeacherCard = styled.div`
     right: 23px;
     width: 12px;
     height: 12px;
-    border: 4px solid var(--secondary-text-color);
-    color: var(--accent-color);
+    border: 4px solid ${color.secondaryTextColor};
+    color: ${color.accentColor};
   }
 
   .teacher-about {
@@ -51,50 +52,50 @@ export const StyledTeacherCard = styled.div`
   }
 
   .teacher-name-wrapper p {
-    margin-bottom: 8px;
+    margin-bottom: ${spacing(2)};
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    color: var(--light-text-color);
+    color: ${color.lightTextColor};
   }
 
   .teacher-name {
     font-size: 24px;
     font-weight: 500;
     line-height: 1;
-    color: var(--primary-text-color);
+    color: ${color.primaryTextColor};
   }
 
   .teacher-score {
     display: flex;
     align-items: center;
-    margin-right: 90px;
+    margin-right: ${spacing(22.5)};
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    color: var(--primary-text-color);
+    color: ${color.primaryTextColor};
   }
 
   .star {
-    color: var(--primary-yellow);
+    color: ${color.primaryYellow};
   }
 
   .teacher-score div {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: ${spacing(2)};
     height: 24px;
   }
 
   .teacher-score div:not(:last-child)::after {
     content: '|';
-    margin: 0 16px;
-    color: var(--primary-middle);
+    margin: 0 ${spacing(4)};
+    color: ${color.primaryMiddle};
   }
 
   .price span {
-    color: var(--accent-color);
+    color: ${color.accentColor};
   }
 
   .teacher-info {
@@ -109,18 +110,18 @@ export const StyledTeacherCard = styled.div`
   }
 
   .teacher-info-general {
-    margin-bottom: 16px;
+    margin-bottom: ${spacing(4)};
   }
 
   .teacher-info span {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    color: var(--light-text-color);
+    color: ${color.lightTextColor};
   }
 
   .teacher-info p:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: ${spacing(2)};
   }
 
   .speaks {
@@ -131,6 +132,6 @@ export const StyledTeacherCard = styled.div`
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     display: flex;
-    gap: 8px;
+    gap: ${spacing(2)};
   }
 `;
