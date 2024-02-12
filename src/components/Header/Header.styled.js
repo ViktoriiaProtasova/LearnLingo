@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1184px;
+  margin: 20px 128px;
 
   .auth-wrapper {
     display: flex;
