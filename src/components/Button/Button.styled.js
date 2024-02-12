@@ -20,6 +20,8 @@ export const StyledButton = styled.button`
   background: ${({ $registration }) =>
     $registration ? `${color.primaryTextColor}` : `${color.primaryYellow}`};
 
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+
   transition:
     background ${transition.duration} ${transition.timingFunction},
     color ${transition.duration} ${transition.timingFunction};
@@ -49,12 +51,7 @@ export const StyledButton = styled.button`
   &:hover,
   &:focus {
     background: ${({ $registration }) =>
-      $registration
-        ? `${color.secondaryTextColor}`
-        : `${color.secondaryYellow}`};
-
-    border: ${({ $registration }) =>
-      $registration && `1px solid ${color.primaryTextColor}`};
+      $registration ? `${color.secondaryYellow}` : `${color.secondaryYellow}`};
 
     color: ${({ $registration }) =>
       $registration && `${color.primaryTextColor}`};
