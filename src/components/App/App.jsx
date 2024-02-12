@@ -33,7 +33,7 @@ const App = () => {
       {/* <Hero></Hero> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
-      {/* <Header></Header> */}
+      <Header></Header>
       {/* <Footer></Footer> */}
       {/* <StatisticsSection></StatisticsSection> */}
       {/* <Filter $type="languages" $title="Level of knowledge"></Filter> */}
