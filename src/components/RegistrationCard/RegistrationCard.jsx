@@ -16,16 +16,23 @@ const RegistrationCard = () => {
         </p>
       </StyledTitle>
       <fieldset className="input-group">
-        <StyledInput name="name" type="text" placeholder="Name"></StyledInput>
+        <StyledInput
+          name="name"
+          type="text"
+          placeholder="Name"
+          autoComplete="name"
+        ></StyledInput>
         <StyledInput
           name="email"
           type="email"
           placeholder="Email"
+          autoComplete="email"
         ></StyledInput>
         <StyledInput
           name="password"
           type="password"
           placeholder="Password"
+          autoComplete="current-password"
         ></StyledInput>
       </fieldset>
       <Button $size="large">Sign Up</Button>

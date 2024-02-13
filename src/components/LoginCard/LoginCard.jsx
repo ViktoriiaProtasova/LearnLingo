@@ -19,11 +19,13 @@ const LoginCard = () => {
           name="email"
           type="email"
           placeholder="Email"
+          autoComplete="email"
         ></StyledInput>
         <StyledInput
           name="password"
           type="password"
           placeholder="Password"
+          autoComplete="current-password"
         ></StyledInput>
       </fieldset>
       <Button $size="large">Log In</Button>

@@ -24,16 +24,16 @@ const App = () => {
   return (
     <StyledApp>
       {/* <Button $registration>Click me</Button> */}
-      {/* <PopUp>
-        <LoginCard></LoginCard>
-        <Booking></Booking>
-        <RegistrationCard></RegistrationCard>
-      </PopUp> */}
+      {/* <PopUp> */}
+      {/* <LoginCard></LoginCard> */}
+      {/* <Booking></Booking> */}
+      {/* <RegistrationCard></RegistrationCard> */}
+      {/* </PopUp> */}
       {/* <TeacherCard></TeacherCard> */}
       {/* <Hero></Hero> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
-      <Header></Header>
+      {/* <Header></Header> */}
       {/* <Footer></Footer> */}
       {/* <StatisticsSection></StatisticsSection> */}
       {/* <Filter $type="languages" $title="Level of knowledge"></Filter> */}
