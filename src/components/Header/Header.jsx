@@ -12,7 +12,7 @@ const Header = () => {
       <Logo />
       <Navigation />
       <Auth />
-      <button type="button">
+      <button type="button" aria-controls="mobile-menu">
         <CgMenu size={iconSize.xl} aria-label="Mobile menu switch" />
       </button>
     </StyledHeader>
