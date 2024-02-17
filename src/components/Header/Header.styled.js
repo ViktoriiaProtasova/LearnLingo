@@ -9,7 +9,7 @@ export const StyledHeader = styled.header`
   height: 48px;
   margin: 0 auto 20px;
 
-  & > svg {
+  & > button {
     display: block;
     transition: color ${transition.duration} ${transition.timingFunction};
 
@@ -20,7 +20,7 @@ export const StyledHeader = styled.header`
   }
 
   @media screen and (min-width: 752px) {
-    & > svg {
+    & > button {
       display: none;
     }
   }
