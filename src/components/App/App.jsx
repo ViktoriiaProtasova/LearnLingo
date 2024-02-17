@@ -19,12 +19,14 @@ import Footer from 'components/Footer/Footer';
 import StatisticsSection from 'components/StatisticsSection/StatisticsSection';
 import { StyledApp } from './App.styled';
 import Filter from 'components/Filter/Filter';
+import MobileMenu from 'components/MobileMenu/MobileMenu';
 
 const App = () => {
   return (
     <StyledApp>
       {/* <Button $registration>Click me</Button> */}
       {/* <PopUp> */}
+      {/* <MobileMenu /> */}
       {/* <LoginCard></LoginCard> */}
       {/* <Booking></Booking> */}
       {/* <RegistrationCard></RegistrationCard> */}
@@ -33,7 +35,7 @@ const App = () => {
       {/* <Hero></Hero> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
-      {/* <Header></Header> */}
+      <Header></Header>
       {/* <Footer></Footer> */}
       {/* <StatisticsSection></StatisticsSection> */}
       {/* <Filter $type="languages" $title="Level of knowledge"></Filter> */}

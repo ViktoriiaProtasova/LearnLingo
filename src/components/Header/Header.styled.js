@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, spacing, transition } from 'constants';
+import { color, transition } from 'constants';
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -9,24 +9,19 @@ export const StyledHeader = styled.header`
   height: 48px;
   margin: 0 auto 20px;
 
-  .auth-wrapper {
-    display: flex;
-    gap: ${spacing(4)};
-  }
-
-  nav {
-    display: flex;
-    gap: ${spacing(4)};
-    font-size: ${spacing(4)};
-    font-weight: 400;
-    line-height: 1.25;
-  }
-
-  nav a {
+  & > svg {
+    display: block;
     transition: color ${transition.duration} ${transition.timingFunction};
+
+    &:hover,
+    &:focus {
+      color: ${color.primaryYellow};
+    }
   }
 
-  nav a:is(:hover, :focus) {
-    color: ${color.primaryYellow};
+  @media screen and (min-width: 752px) {
+    & > svg {
+      display: none;
+    }
   }
 `;

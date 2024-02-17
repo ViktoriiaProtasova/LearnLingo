@@ -1,21 +1,18 @@
 import React from 'react';
 import { StyledHeader } from './Header.styled';
 import Logo from 'components/Logo/Logo';
-import Login from 'components/Login/Login';
-import Button from 'components/Button/Button';
+import Auth from 'components/Auth/Auth';
+import Navigation from 'components/Navigation/Navigation';
+import { CgMenu } from 'react-icons/cg';
+import { iconSize } from '../../constants';
 
 const Header = () => {
   return (
     <StyledHeader>
       <Logo />
-      <nav>
-        <a href="">Home</a>
-        <a href="">Teachers</a>
-      </nav>
-      <div className="auth-wrapper">
-        <Login />
-        <Button $registration>Registration</Button>
-      </div>
+      <Navigation />
+      <Auth />
+      <CgMenu size={iconSize.xl} />
     </StyledHeader>
   );
 };

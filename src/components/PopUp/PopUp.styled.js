@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, transition } from 'constants';
+import { color, transition, spacing } from 'constants';
 
 export const StyledPopUp = styled.div`
   position: fixed;
@@ -16,8 +16,8 @@ export const StyledPopUp = styled.div`
 
   .modal {
     position: relative;
-    width: 600px;
-    padding: 64px;
+    max-width: 600px;
+    padding: ${spacing(16)};
     border-radius: 30px;
     max-height: 70vh;
     background: ${color.secondaryTextColor};
@@ -33,7 +33,7 @@ export const StyledPopUp = styled.div`
     background-color: transparent;
   }
 
-  .modal svg {
+  .modal > svg {
     color: ${color.primaryTextColor};
   }
 `;
