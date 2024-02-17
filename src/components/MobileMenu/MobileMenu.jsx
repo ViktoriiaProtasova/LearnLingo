@@ -5,7 +5,7 @@ import Navigation from 'components/Navigation/Navigation';
 
 const MobileMenu = () => {
   return (
-    <StyledMobileMenu>
+    <StyledMobileMenu id="mobile-menu">
       <Navigation className="mobile" />
       <Auth className="mobile" />
     </StyledMobileMenu>
