@@ -8,22 +8,26 @@ export const StyledPopUp = styled.div`
   z-index: 100;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  overflow: auto;
   background-color: ${color.bgColor};
   transition: opacity ${transition.duration} ${transition.timingFunction};
 
   .modal {
     position: relative;
     max-width: 600px;
-    padding: ${spacing(16)};
+    padding: ${spacing(12)};
     border-radius: 30px;
-    max-height: 70vh;
-    background: ${color.secondaryTextColor};
-    overflow: auto;
-  }
+    margin: ${spacing(16)} 0;
 
+    background: ${color.secondaryTextColor};
+
+    @media screen and (min-width: 752px) {
+      padding: ${spacing(16)};
+      margin: ${spacing(16)} ${spacing(4)};
+    }
+  }
   .close-button {
     position: absolute;
     top: 20px;
