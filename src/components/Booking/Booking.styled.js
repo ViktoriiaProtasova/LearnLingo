@@ -18,6 +18,7 @@ export const StyledBooking = styled.form`
   }
 
   .teacher-title {
+    margin-bottom: ${spacing(1)};
     font-size: 12px;
     font-weight: 500;
     line-height: 1.33;
