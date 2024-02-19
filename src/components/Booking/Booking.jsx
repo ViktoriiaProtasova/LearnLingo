@@ -8,8 +8,8 @@ const Booking = ({ name, surname, avatar_url }) => {
   return (
     <StyledBooking>
       <StyledTitle>
-        <h1 className="booking-title">Book trial lesson</h1>
-        <p className="booking-text">
+        <h1 className="form-title">Book trial lesson</h1>
+        <p className="form-text">
           Our experienced tutor will assess your current language level, discuss
           your learning goals, and tailor the lesson to your specific needs.
         </p>
