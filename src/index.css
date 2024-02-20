@@ -68,3 +68,7 @@ fieldset {
   flex-direction: column;
   gap: 18px;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
