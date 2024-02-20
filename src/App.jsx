@@ -5,7 +5,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 // import Button from '../Button/Button';
-import PopUp from '../PopUp/PopUp';
+import PopUp from './components/PopUp/PopUp';
 import Booking from 'components/Booking/Booking';
 import LoginCard from 'components/LoginCard/LoginCard';
 import RegistrationCard from 'components/RegistrationCard/RegistrationCard';
@@ -17,19 +17,18 @@ import Logo from 'components/Logo/Logo';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import StatisticsSection from 'components/StatisticsSection/StatisticsSection';
-import { StyledApp } from './App.styled';
 import Filter from 'components/Filter/Filter';
 import MobileMenu from 'components/MobileMenu/MobileMenu';
 
 const App = () => {
   return (
-    <StyledApp>
+    <div>
       {/* <Button $registration>Click me</Button> */}
       <PopUp>
         {/* <MobileMenu /> */}
-        {/* <LoginCard></LoginCard> */}
-        <Booking></Booking>
-        {/* <RegistrationCard></RegistrationCard> */}
+        {/* <LoginCard /> */}
+        <Booking />
+        {/* <RegistrationCard /> */}
       </PopUp>
       {/* <TeacherCard></TeacherCard> */}
       {/* <Hero></Hero> */}
@@ -39,7 +38,7 @@ const App = () => {
       {/* <Footer></Footer> */}
       {/* <StatisticsSection></StatisticsSection> */}
       {/* <Filter $type="languages" $title="Level of knowledge"></Filter> */}
-    </StyledApp>
+    </div>
   );
 };
 

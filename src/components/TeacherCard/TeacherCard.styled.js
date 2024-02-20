@@ -24,6 +24,7 @@ export const StyledTeacherCard = styled.div`
     padding: ${spacing(3)};
     border-radius: 50%;
     border: 3px solid ${color.lightYellow};
+    overflow: hidden;
   }
 
   .teacher-avatar .online {

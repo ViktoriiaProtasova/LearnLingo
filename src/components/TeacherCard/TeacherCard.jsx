@@ -7,6 +7,7 @@ import { VscCircleFilled } from 'react-icons/vsc';
 import { iconSize } from '../../constants';
 import { StyledTeacherCard } from './TeacherCard.styled';
 import TeacherLevel from 'components/TeacherLevel/TeacherLevel';
+import avatar from '../../images/block-1.jpg';
 
 const TeacherCard = ({
   name,
@@ -17,7 +18,7 @@ const TeacherCard = ({
   reviews,
   price_per_hour,
   lessons_done,
-  avatar_url,
+  avatar_url = avatar,
   lesson_info,
   conditions,
   experience,
@@ -27,7 +28,7 @@ const TeacherCard = ({
     <StyledTeacherCard>
       <div className="teacher-avatar">
         <div className="thumb">
-          <img src={avatar_url} alt={`${name} ${surname}`} />
+          <img src={avatar_url ?? avatar} alt={`${name} ${surname}`} />
           <VscCircleFilled className="online" />
         </div>
       </div>

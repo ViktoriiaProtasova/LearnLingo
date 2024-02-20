@@ -27,6 +27,7 @@ export const StyledPopUp = styled.div`
       margin: ${spacing(16)} ${spacing(4)};
     }
   }
+
   .close-button {
     position: absolute;
     top: ${spacing(5)};

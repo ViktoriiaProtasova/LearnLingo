@@ -15,6 +15,7 @@ export const StyledBooking = styled.form`
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    overflow: hidden;
   }
 
   .teacher-title {
@@ -46,22 +47,5 @@ export const StyledBooking = styled.form`
 
   .radio-wrapper:not(:last-child) {
     margin-bottom: ${spacing(4)};
-  }
-`;
-
-export const StyledTitle = styled.div`
-  .form-title {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.8px;
-    margin-bottom: ${spacing(5)};
-  }
-
-  .form-text {
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.38;
-    margin-bottom: ${spacing(5)};
   }
 `;

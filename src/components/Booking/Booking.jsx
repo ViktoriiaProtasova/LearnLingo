@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledBooking, StyledTitle } from './Booking.styled';
+import { StyledBooking } from './Booking.styled';
 import Button from 'components/Button/Button';
 import Input from 'components/Input/Input';
+import avatar from '../../images/block-1.jpg';
+import FormTitle from 'components/FormTitle/FormTitle';
 
-const Booking = ({ name, surname, avatar_url }) => {
+const Booking = ({ name, surname, avatar_url = avatar }) => {
   return (
     <StyledBooking>
-      <StyledTitle>
-        <h1 className="form-title">Book trial lesson</h1>
-        <p className="form-text">
-          Our experienced tutor will assess your current language level, discuss
-          your learning goals, and tailor the lesson to your specific needs.
-        </p>
-      </StyledTitle>
+      <FormTitle
+        $title="Book trial lesson"
+        $text="Our experienced tutor will assess your current language level, discuss
+          your learning goals, and tailor the lesson to your specific needs."
+      />
       <div className="image-wrapper">
         <div className="image-thumb">
-          <img src={avatar_url} alt="Your teacher" />
+          <img src={avatar_url ?? avatar} alt="Your teacher" />
         </div>
         <div>
           <p className="teacher-title">YourTeacher</p>
