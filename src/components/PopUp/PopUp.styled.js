@@ -17,10 +17,9 @@ export const StyledPopUp = styled.div`
   .modal {
     position: relative;
     max-width: 600px;
-    padding: ${spacing(12)};
+    padding: ${spacing(16)} ${spacing(8)};
+    margin: ${spacing(16)} ${spacing(4)};
     border-radius: 30px;
-    margin: ${spacing(16)} 0;
-
     background: ${color.secondaryTextColor};
 
     @media screen and (min-width: 752px) {
@@ -30,8 +29,8 @@ export const StyledPopUp = styled.div`
   }
   .close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: ${spacing(5)};
+    right: ${spacing(5)};
     border: none;
     outline: none;
     background-color: transparent;
