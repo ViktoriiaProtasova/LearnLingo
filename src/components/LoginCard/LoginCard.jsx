@@ -1,10 +1,8 @@
 import React from 'react';
-
-import { StyledInput } from 'components/Input/Input.styled';
 import { StyledLoginCard } from './LoginCard.styled';
 import Button from 'components/Button/Button';
-
 import FormTitle from 'components/FormTitle/FormTitle';
+import Input from 'components/Input/Input';
 
 const LoginCard = () => {
   return (
@@ -15,18 +13,19 @@ const LoginCard = () => {
         continue your search for an teacher."
       />
       <fieldset className="input-group">
-        <StyledInput
+        <Input
           name="email"
           type="email"
           placeholder="Email"
           autoComplete="email"
-        ></StyledInput>
-        <StyledInput
+          autoFocus
+        />
+        <Input
           name="password"
           type="password"
           placeholder="Password"
           autoComplete="current-password"
-        ></StyledInput>
+        />
       </fieldset>
       <Button $size="large">Log In</Button>
     </StyledLoginCard>

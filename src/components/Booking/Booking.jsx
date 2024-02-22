@@ -62,19 +62,19 @@ const Booking = ({ name, surname, avatar_url = avatar }) => {
           name="full_name"
           placeholder="Full Name"
           autoComplete="name"
-        ></Input>
+        />
         <Input
           type="email"
           name="email"
           placeholder="Email"
           autoComplete="email"
-        ></Input>
+        />
         <Input
           type="tel"
           name="tel"
           placeholder="Phone number"
           autoComplete="tel"
-        ></Input>
+        />
       </fieldset>
       <Button $size="large">Book</Button>
     </StyledBooking>

@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledInput } from './Input.styled';
 
-const Input = ({ name, type, placeholder, autoComplete }) => {
+const Input = ({ name, type, placeholder, autoComplete, autoFocus }) => {
   return (
     <StyledInput
       type={type}
       name={name}
       placeholder={placeholder}
       autoComplete={autoComplete}
-    ></StyledInput>
+      autoFocus={autoFocus}
+    />
   );
 };
 

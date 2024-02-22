@@ -5,6 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -39,7 +43,6 @@ button {
 a {
   color: currentColor;
   text-decoration: none;
-  cursor: pointer;
 }
 
 fieldset {
@@ -67,8 +70,4 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 18px;
-}
-
-body.modal-open {
-  overflow: hidden;
 }

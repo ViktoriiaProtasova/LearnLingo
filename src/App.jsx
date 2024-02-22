@@ -25,9 +25,9 @@ const App = () => {
     <div>
       {/* <Button $registration>Click me</Button> */}
       <PopUp>
-        {/* <MobileMenu /> */}
+        <MobileMenu />
         {/* <LoginCard /> */}
-        <Booking />
+        {/* <Booking /> */}
         {/* <RegistrationCard /> */}
       </PopUp>
       {/* <TeacherCard></TeacherCard> */}

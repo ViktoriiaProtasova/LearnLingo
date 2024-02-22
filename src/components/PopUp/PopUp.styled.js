@@ -37,7 +37,12 @@ export const StyledPopUp = styled.div`
     background-color: transparent;
   }
 
-  .modal > svg {
+  .close-button > svg {
     color: ${color.primaryTextColor};
+    transition: color ${transition.duration} ${transition.timingFunction};
+  }
+
+  .close-button:is(:hover, :focus) > svg {
+    color: ${color.primaryYellow};
   }
 `;

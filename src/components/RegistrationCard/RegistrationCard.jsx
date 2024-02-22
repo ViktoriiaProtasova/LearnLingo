@@ -1,9 +1,8 @@
 import React from 'react';
-
-import { StyledInput } from 'components/Input/Input.styled';
 import { StyledRegistrationCard } from './RegistrationCard.styled';
 import Button from 'components/Button/Button';
 import FormTitle from 'components/FormTitle/FormTitle';
+import Input from 'components/Input/Input';
 
 const RegistrationCard = () => {
   return (
@@ -16,24 +15,25 @@ const RegistrationCard = () => {
       />
 
       <fieldset className="input-group">
-        <StyledInput
+        <Input
           name="name"
           type="text"
           placeholder="Name"
           autoComplete="name"
-        ></StyledInput>
-        <StyledInput
+          autoFocus
+        />
+        <Input
           name="email"
           type="email"
           placeholder="Email"
           autoComplete="email"
-        ></StyledInput>
-        <StyledInput
+        />
+        <Input
           name="password"
           type="password"
           placeholder="Password"
           autoComplete="current-password"
-        ></StyledInput>
+        />
       </fieldset>
       <Button $size="large">Sign Up</Button>
     </StyledRegistrationCard>
