@@ -19,6 +19,7 @@ Input.propTypes = {
   type: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   autoComplete: PropTypes.string.isRequired,
+  autoFocus: PropTypes.bool,
 };
 
 export default Input;
