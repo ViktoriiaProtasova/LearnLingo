@@ -24,19 +24,20 @@ const App = () => {
   return (
     <div>
       {/* <Button $registration>Click me</Button> */}
-      <PopUp>
-        <MobileMenu />
-        {/* <LoginCard /> */}
-        {/* <Booking /> */}
-        {/* <RegistrationCard /> */}
-      </PopUp>
-      {/* <TeacherCard></TeacherCard> */}
-      {/* <Hero></Hero> */}
+      {/* <PopUp> */}
+      {/* <MobileMenu /> */}
+      {/* <LoginCard /> */}
+      {/* <Booking /> */}
+      {/* <RegistrationCard /> */}
+      {/* </PopUp> */}
+      {/* <TeacherCard /> */}
+      <Hero />
+      {/* <HeroImg /> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
-      {/* <Header></Header> */}
+      {/* <Header /> */}
       {/* <Footer></Footer> */}
-      {/* <StatisticsSection></StatisticsSection> */}
+      {/* <StatisticsSection /> */}
       {/* <Filter $type="languages" $title="Level of knowledge"></Filter> */}
     </div>
   );

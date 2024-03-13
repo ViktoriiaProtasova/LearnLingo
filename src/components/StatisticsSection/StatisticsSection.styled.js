@@ -9,7 +9,7 @@ export const StyledStatisticsSection = styled.section`
   justify-items: center;
   padding: ${spacing(10)} 0;
   border-radius: 30px;
-  border: 1.5px dashed ${color.primaryYellow};
+  border: 1.5px dashed ${({ theme }) => theme.primaryColor};
 
   .section-content-item {
     display: inline-flex;

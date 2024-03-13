@@ -1,7 +1,4 @@
 export const color = Object.freeze({
-  secondaryYellow: '#ffdc86',
-  primaryYellow: '#f4c550',
-  lightYellow: '#fbe9ba',
   secondaryTextColor: '#ffffff',
   primaryTextColor: '#121417',
   lightTextColor: '#8a8a89',

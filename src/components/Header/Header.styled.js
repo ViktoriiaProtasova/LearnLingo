@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
 
     &:hover,
     &:focus {
-      color: ${color.primaryYellow};
+      color: ${theme => theme.primaryColor};
     }
   }
 

@@ -16,6 +16,6 @@ export const StyledTeacherLevel = styled.span`
   ${({ $isActive }) =>
     $isActive &&
     `border: transparent;
-    background-color: ${color.primaryYellow};
+    background-color: ${({ theme }) => theme.primaryColor};
   `}
 `;

@@ -43,6 +43,6 @@ export const StyledPopUp = styled.div`
   }
 
   .close-button:is(:hover, :focus) > svg {
-    color: ${color.primaryYellow};
+    color: ${({ theme }) => theme.primaryColor};
   }
 `;

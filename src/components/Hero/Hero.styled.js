@@ -23,7 +23,7 @@ export const StyledHero = styled.div`
     min-width: 195px;
     padding-left: ${spacing(3)};
     border-radius: 8px;
-    background-color: ${color.lightYellow};
+    background-color: ${({ theme }) => theme.secondaryColor};
   }
 
   .hero-text {

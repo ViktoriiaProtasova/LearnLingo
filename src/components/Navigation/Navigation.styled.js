@@ -13,7 +13,7 @@ export const StyledNav = styled.nav`
   }
 
   & a:is(:hover, :focus) {
-    color: ${color.primaryYellow};
+    color: ${({ theme }) => theme.primaryColor};
   }
 
   &.mobile {
