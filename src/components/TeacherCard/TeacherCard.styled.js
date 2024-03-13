@@ -23,7 +23,7 @@ export const StyledTeacherCard = styled.div`
     height: 120px;
     padding: ${spacing(3)};
     border-radius: 50%;
-    border: 3px solid ${color.lightYellow};
+    border: 3px solid ${({ theme }) => theme.secondaryColor};
     overflow: hidden;
   }
 
@@ -78,7 +78,7 @@ export const StyledTeacherCard = styled.div`
   }
 
   .star {
-    color: ${color.primaryYellow};
+    color: ${({ theme }) => theme.primaryColor};
   }
 
   .teacher-score div {

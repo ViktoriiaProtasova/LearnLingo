@@ -22,6 +22,6 @@ export const StyledFooter = styled.footer`
   }
 
   a:is(:hover, :focus) {
-    color: ${color.primaryYellow};
+    color: ${({ theme }) => theme.primaryColor};
   }
 `;

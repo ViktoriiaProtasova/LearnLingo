@@ -13,6 +13,6 @@ export const StyledLogo = styled.a`
 
   &:hover,
   &:focus {
-    color: ${color.primaryYellow};
+    color: ${({ theme }) => theme.primaryColor};
   }
 `;

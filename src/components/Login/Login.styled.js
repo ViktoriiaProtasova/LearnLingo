@@ -9,7 +9,7 @@ export const StyledLogin = styled.a`
   .login-icon {
     width: 20px;
     height: 20px;
-    color: ${color.primaryYellow};
+    color: ${({ theme }) => theme.primaryColor};
     transition: color ${transition.duration} ${transition.timingFunction};
   }
 
@@ -18,7 +18,7 @@ export const StyledLogin = styled.a`
   }
 
   .login-icon:is(:hover, :focus) + .login-text {
-    color: ${color.primaryYellow};
+    color: ${({ theme }) => theme.primaryColor};
   }
 
   .login-text {
