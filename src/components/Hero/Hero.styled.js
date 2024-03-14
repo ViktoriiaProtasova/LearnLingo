@@ -2,11 +2,19 @@ import styled from 'styled-components';
 import { color, spacing } from 'constants';
 
 export const StyledHero = styled.div`
-  max-width: 720px;
-  max-height: 530px;
-  padding: ${spacing(24.5)} ${spacing(16)};
-  border-radius: 30px;
-  background-color: ${color.bgColor};
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+  gap: ${spacing(16)};
+  align-items: center;
+  justify-items: center;
+
+  .hero-content {
+    max-width: 568px;
+    border-radius: 30px;
+    padding: ${spacing(24.5)} ${spacing(16)};
+    background-color: ${color.bgColor};
+  }
 
   .hero-title {
     font-size: 48px;
@@ -21,7 +29,7 @@ export const StyledHero = styled.div`
     display: inline-block;
     font-style: italic;
     min-width: 195px;
-    padding-left: ${spacing(3)};
+    padding-left: ${spacing(1.5)};
     border-radius: 8px;
     background-color: ${({ theme }) => theme.secondaryColor};
   }

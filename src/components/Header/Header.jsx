@@ -6,15 +6,20 @@ import Navigation from 'components/Navigation/Navigation';
 import { CgMenu } from 'react-icons/cg';
 import { iconSize } from '../../constants';
 
+import Filter from 'components/Filter/Filter';
+
 const Header = () => {
   return (
     <StyledHeader>
-      <Logo />
-      <Navigation />
-      <Auth />
-      <button type="button" aria-controls="mobile-menu">
-        <CgMenu size={iconSize.xl} aria-label="Mobile menu switch" />
-      </button>
+      <div className="header-wrapper">
+        <Logo />
+        <Navigation />
+        <Auth />
+        <button type="button" aria-controls="mobile-menu">
+          <CgMenu size={iconSize.xl} aria-label="Mobile menu switch" />
+        </button>
+      </div>
+      <Filter $type="theme" $title="Theme" />
     </StyledHeader>
   );
 };

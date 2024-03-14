@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, spacing, transition } from 'constants';
+import { spacing, transition } from 'constants';
 
 export const StyledNav = styled.nav`
   display: none;
@@ -20,7 +20,6 @@ export const StyledNav = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: ${spacing(12)};
   }
 
   @media screen and (min-width: 752px) {
