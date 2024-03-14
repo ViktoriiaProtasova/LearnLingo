@@ -10,7 +10,7 @@ export const StyledHero = styled.div`
   justify-items: center;
 
   .hero-content {
-    max-width: 568px;
+    max-width: 720px;
     border-radius: 30px;
     padding: ${spacing(24.5)} ${spacing(16)};
     background-color: ${color.bgColor};
