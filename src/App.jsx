@@ -31,11 +31,11 @@ const App = () => {
       {/* <RegistrationCard /> */}
       {/* </PopUp> */}
       {/* <TeacherCard /> */}
-      {/* <Hero /> */}
+      <Hero />
       {/* <HeroImg /> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
-      <Header />
+      {/* <Header /> */}
       {/* <Footer></Footer> */}
       {/* <StatisticsSection /> */}
       {/* <Filter $type="theme" $title="Themes"></Filter> */}
