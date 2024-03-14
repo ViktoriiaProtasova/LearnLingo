@@ -4,7 +4,7 @@ import { color, spacing } from 'constants';
 export const StyledHero = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(568px, 1fr));
   gap: ${spacing(16)};
   align-items: center;
   justify-items: center;
