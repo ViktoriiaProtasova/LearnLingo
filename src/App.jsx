@@ -31,14 +31,14 @@ const App = () => {
       {/* <RegistrationCard /> */}
       {/* </PopUp> */}
       {/* <TeacherCard /> */}
-      <Hero />
+      {/* <Hero /> */}
       {/* <HeroImg /> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
-      {/* <Header /> */}
+      <Header />
       {/* <Footer></Footer> */}
       {/* <StatisticsSection /> */}
-      {/* <Filter $type="languages" $title="Level of knowledge"></Filter> */}
+      {/* <Filter $type="theme" $title="Themes"></Filter> */}
     </div>
   );
 };

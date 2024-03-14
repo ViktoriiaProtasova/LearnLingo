@@ -19,7 +19,6 @@ import salmon2x from '../images/block-5@2x.jpg';
 import salmon3x from '../images/block-5@3x.jpg';
 
 export const getHero = color => {
-  console.log(color);
   switch (color) {
     case 'yellow':
       return `${yellow}`;

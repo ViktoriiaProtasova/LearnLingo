@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, spacing, transition } from 'constants';
+import { color, spacing } from 'constants';
 
 export const StyledFilter = styled.fieldset`
   legend {
@@ -12,7 +12,21 @@ export const StyledFilter = styled.fieldset`
 `;
 
 export const StyledSelect = styled.select`
-  width: ${({ $title }) => ($title === 'price' ? '124px' : '198px')};
-  height: 48px;
+  width: ${({ $title }) => {
+    switch ($title) {
+      case 'price':
+        return '124px';
+      case 'languages':
+        return '198px';
+      default:
+        return '68px';
+    }
+  }};
+
+  height: ${({ $title }) => {
+    return $title === 'Theme' && `${spacing(7)}`;
+  }};
+
   border-radius: 14px;
+  cursor: pointer;
 `;

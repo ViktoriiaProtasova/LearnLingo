@@ -9,7 +9,7 @@ import { theme } from 'constants/theme';
 const root = createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
-    <ThemeProvider theme={theme.green}>
+    <ThemeProvider theme={theme.red}>
       <App />
     </ThemeProvider>
   </StrictMode>,
