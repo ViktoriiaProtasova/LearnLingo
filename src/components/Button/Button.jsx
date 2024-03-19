@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledButton } from './Button.styled';
 
-const Button = ({ $size, $registration, children }) => {
+const Button = ({ type, $size, $registration, children }) => {
   return (
-    <StyledButton $size={$size} $registration={$registration}>
+    <StyledButton type={type} $size={$size} $registration={$registration}>
       {children}
     </StyledButton>
   );
