@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Field } from 'formik';
+
 import { StyledInput } from './Input.styled';
 
 const Input = ({ name, type, placeholder, autoComplete, autoFocus }) => {
   return (
-    <StyledInput
+    <Field
       type={type}
       name={name}
       placeholder={placeholder}
       autoComplete={autoComplete}
       autoFocus={autoFocus}
+      as={StyledInput}
     />
   );
 };

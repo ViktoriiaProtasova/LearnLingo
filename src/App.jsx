@@ -24,14 +24,14 @@ const App = () => {
   return (
     <div>
       {/* <Button $registration>Click me</Button> */}
-      {/* <PopUp> */}
-      {/* <MobileMenu /> */}
-      {/* <LoginCard /> */}
-      {/* <Booking /> */}
-      {/* <RegistrationCard /> */}
-      {/* </PopUp> */}
+      <PopUp>
+        {/* <MobileMenu /> */}
+        <LoginCard />
+        {/* <Booking /> */}
+        {/* <RegistrationCard /> */}
+      </PopUp>
       {/* <TeacherCard /> */}
-      <Hero />
+      {/* <Hero /> */}
       {/* <HeroImg /> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
