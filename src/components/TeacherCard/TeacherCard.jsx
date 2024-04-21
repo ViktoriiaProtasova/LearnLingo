@@ -93,7 +93,7 @@ const TeacherCard = ({
       <div className="teacher-experience"></div>
       {/* <div className="grid-row teacher-level">
         {levels.map(level => {
-          return <TeacherLevel level={level}></TeacherLevel>;
+          return <TeacherLevel key={level} level={level}></TeacherLevel>;
         })}
       </div> */}
     </StyledTeacherCard>
