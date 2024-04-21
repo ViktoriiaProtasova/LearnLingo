@@ -10,7 +10,7 @@ import avatar1x from '../../images/image1x.jpg';
 import avatar2x from '../../images/image2x.jpg';
 import avatar3x from '../../images/image3x.jpg';
 
-const avatarUrl = `${avatar1x} 1x, ${avatar2x} 2x, ${avatar3x} 3x`;
+const avatarDefaultSet = `${avatar1x} 1x, ${avatar2x} 2x, ${avatar3x} 3x`;
 
 const TeacherCard = ({
   name,
@@ -33,7 +33,7 @@ const TeacherCard = ({
         <div className="teacher-avatar-thumb">
           <img
             className="teacher-avatar-img"
-            srcset={avatar_url ?? avatarUrl}
+            srcset={avatar_url ?? avatarDefaultSet}
             src={avatar_url ?? avatar1x}
             alt={`${name} ${surname}`}
           />
