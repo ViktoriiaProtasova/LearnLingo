@@ -3,11 +3,14 @@ import PropTypes from 'prop-types';
 import { LuBookOpen } from 'react-icons/lu';
 import { FaStar } from 'react-icons/fa';
 import { FiHeart } from 'react-icons/fi';
-import { VscCircleFilled } from 'react-icons/vsc';
 import { iconSize } from '../../constants';
 import { StyledTeacherCard } from './TeacherCard.styled';
 import TeacherLevel from 'components/TeacherLevel/TeacherLevel';
-import avatar from '../../images/block-1.jpg';
+import avatar1x from '../../images/image1x.jpg';
+import avatar2x from '../../images/image2x.jpg';
+import avatar3x from '../../images/image3x.jpg';
+
+const avatarUrl = `${avatar1x} 1x, ${avatar2x} 2x, ${avatar3x} 3x`;
 
 const TeacherCard = ({
   name,
@@ -18,7 +21,7 @@ const TeacherCard = ({
   reviews,
   price_per_hour,
   lessons_done,
-  avatar_url = avatar,
+  avatar_url = avatarUrl,
   lesson_info,
   conditions,
   experience,
@@ -27,9 +30,14 @@ const TeacherCard = ({
   return (
     <StyledTeacherCard>
       <div className="teacher-avatar">
-        <div className="thumb">
-          <img src={avatar_url ?? avatar} alt={`${name} ${surname}`} />
-          <VscCircleFilled className="online" />
+        <div className="teacher-avatar-thumb">
+          <img
+            className="teacher-avatar-img"
+            srcset={avatar_url ?? avatarUrl}
+            src={avatar_url ?? avatar1x}
+            alt={`${name} ${surname}`}
+          />
+          <div className="online"></div>
         </div>
       </div>
       <div className="grid-row teacher-about">
@@ -62,33 +70,33 @@ const TeacherCard = ({
       <div className="grid-row teacher-info">
         <div className="teacher-info-general">
           <p className="speaks">
-            <span>
+            {/* <span>
               Speaks:
               {languages.map(language => {
                 return { language };
               })}
-            </span>
+            </span> */}
           </p>
           <p>
             <span>Lesson Info: {lesson_info}</span>
           </p>
           <p>
-            <span>
+            {/* <span>
               Conditions:
               {conditions.map(condition => {
                 return { condition };
               })}
-            </span>
+            </span> */}
           </p>
         </div>
         <a href="">Read more</a>
       </div>
       <div className="teacher-experience"></div>
-      <div className="grid-row teacher-level">
+      {/* <div className="grid-row teacher-level">
         {levels.map(level => {
           return <TeacherLevel level={level}></TeacherLevel>;
         })}
-      </div>
+      </div> */}
     </StyledTeacherCard>
   );
 };

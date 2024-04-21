@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'constants/theme';
 
 const root = createRoot(document.getElementById('root'));
+
 root.render(
   <StrictMode>
     <ThemeProvider theme={theme.red}>

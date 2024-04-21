@@ -17,7 +17,7 @@ export const StyledTeacherCard = styled.div`
     grid-row: 1 / 5;
   }
 
-  .teacher-avatar .thumb {
+  .teacher-avatar-thumb {
     position: relative;
     width: 120px;
     height: 120px;
@@ -27,14 +27,20 @@ export const StyledTeacherCard = styled.div`
     overflow: hidden;
   }
 
+  .teacher-avatar-img {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
   .teacher-avatar .online {
     position: absolute;
     top: 19px;
     right: 23px;
     width: 12px;
     height: 12px;
-    border: 4px solid ${color.secondaryTextColor};
-    color: ${color.accentColor};
+    border: 2px solid ${color.secondaryTextColor};
+    border-radius: 50%;
+    background-color: ${color.accentColor};
   }
 
   .teacher-about {
