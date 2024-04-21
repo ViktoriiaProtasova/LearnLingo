@@ -30,14 +30,14 @@ const App = () => {
       {/* <Booking /> */}
       {/* <RegistrationCard /> */}
       {/* </PopUp> */}
-      <TeacherCard />
+      {/* <TeacherCard /> */}
       {/* <Hero /> */}
       {/* <HeroImg /> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
-      <Header />
+      {/* <Header /> */}
       {/* <Footer></Footer> */}
-      {/* <StatisticsSection /> */}
+      <StatisticsSection />
       {/* <Filter $type="theme" $title="Themes"></Filter> */}
     </div>
   );

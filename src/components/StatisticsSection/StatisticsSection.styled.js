@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediaSize, color, spacing } from 'constants';
+import { mediaSize, spacing } from 'constants';
 
 export const StyledStatisticsSection = styled.section`
   display: grid;

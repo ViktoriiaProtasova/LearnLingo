@@ -29,6 +29,7 @@ const TeacherCard = ({
 }) => {
   return (
     <StyledTeacherCard>
+      <h2 className="visually-hidden">Teacher Card</h2>
       <div className="teacher-avatar">
         <div className="teacher-avatar-thumb">
           <img

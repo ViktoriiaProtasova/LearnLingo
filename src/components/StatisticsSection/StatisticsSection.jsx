@@ -4,6 +4,7 @@ import { StyledStatisticsSection } from './StatisticsSection.styled';
 const StatisticsSection = () => {
   return (
     <StyledStatisticsSection>
+      <h2 className="visually-hidden">Statistics</h2>
       <div className="section-content-item">
         <span>32,000 +</span>
         <p>Experienced tutors</p>

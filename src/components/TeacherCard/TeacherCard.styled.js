@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { color, spacing } from 'constants';
 
-export const StyledTeacherCard = styled.div`
+export const StyledTeacherCard = styled.section`
   display: grid;
   grid-template-columns: 120px 1fr;
   grid-template-rows: repeat(4, auto);

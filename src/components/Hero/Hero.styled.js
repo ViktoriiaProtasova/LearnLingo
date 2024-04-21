@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { color, spacing } from 'constants';
 
-export const StyledHero = styled.div`
+export const StyledHero = styled.section`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(568px, 1fr));
