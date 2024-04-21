@@ -21,7 +21,7 @@ const TeacherCard = ({
   reviews,
   price_per_hour,
   lessons_done,
-  avatar_url = avatarUrl,
+  avatar_url = avatarDefaultSet,
   lesson_info,
   conditions,
   experience,
@@ -37,7 +37,6 @@ const TeacherCard = ({
             src={avatar_url ?? avatar1x}
             alt={`${name} ${surname}`}
           />
-          <div className="online"></div>
         </div>
       </div>
       <div className="grid-row teacher-about">
