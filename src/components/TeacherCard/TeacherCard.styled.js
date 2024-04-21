@@ -27,12 +27,8 @@ export const StyledTeacherCard = styled.div`
     overflow: hidden;
   }
 
-  .teacher-avatar-img {
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  .teacher-avatar .online {
+  .teacher-avatar-thumb::after {
+    content: '';
     position: absolute;
     top: 19px;
     right: 23px;
@@ -41,6 +37,11 @@ export const StyledTeacherCard = styled.div`
     border: 2px solid ${color.secondaryTextColor};
     border-radius: 50%;
     background-color: ${color.accentColor};
+  }
+
+  .teacher-avatar-img {
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .teacher-about {
