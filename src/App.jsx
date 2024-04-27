@@ -31,7 +31,7 @@ const App = () => {
       {/* <RegistrationCard /> */}
       {/* </PopUp> */}
       {/* <TeacherCard /> */}
-      {/* <Hero /> */}
+      <Hero />
       {/* <HeroImg /> */}
       {/* <Login></Login> */}
       {/* <Logo></Logo> */}
